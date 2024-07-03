@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+    <html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./reset.css/reset.css">
+        <link rel="stylesheet" href="style.css">
+        <!-- tipografia del proyecto -->
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        </style>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+        </style>
+
+        <title>Alura Geek</title>
+    </head>
+
+    <body>
+        <header>
+            <div class="encabezado">
+                <img src="imagen/corazones.png" alt="corazones alineados" class="encabezado_corazon">
+                <h1 class="encabezado_titulo">AluraGeek</h1>
+            </div>
+        </header>
+
+        <main class="contenedor">
+
+            <section class="contenedor_productos">
+                <h1 class="productos__titulo">MIS PRODUCTOS</h1>
+
+                <!-- Seccion de tarjeta -->
+                <!-- https://imgur.com/hCzpKOw -->
+
+                <div data-product class="tarjetas_contendor">
+                    <!-- <div class="card">
+                    </div> -->
+
+                </div>
+
+
+
+            </section>
+
+            <section class="contenedor_lista">
+
+                <form class="lista_formulario" data-form>
+
+                    <div>
+                        <h1 class="lista_titulo">AGREGAR PRODUCTO:</h1>
+
+                        <div class="grupo__lista_formulario">
+                            <input data-name type="text" name="nombre" id="nombre" class="grupo_input" placeholder="nombre...">
+                        </div>
+
+                        <div class="grupo__lista_formulario">
+                            <input data-price type="text" name="precio" id="precio" class="grupo_input" placeholder="precio...">
+                        </div>
+
+                        <div class="grupo__lista_formulario">
+                            <input data-image type="text" name="imagen" id="imagen" class="grupo_input" placeholder="imagen...">
+                        </div>
+
+                        <div class="botones">
+                            <input type="submit" value="Enviar" class="boton_enviar" />
+                            <input type="reset" value="Limpiar" class="boton_limpiar" />
+                        </div>
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <footer>
+            <div class="footer">
+
+                <div class="pie_de_pagina">
+                    <img src="/imagen/corazones.png" alt="corazones alineados" class="corazon">
+                    <h2 class="pie_encabezado">AluraGeek</h2>
+                </div>
+                <div class="segundo">
+                    <p class="descripcion">DESARROLLADO POR TONATIUH JASSO</p>
+                    <p class="descripcionB">Alura 2024</p>
+                </div>
+            </div>
+        </footer>
+
+        <script type="module" src="./js/controllers/main.js"></script>
+    </body>
+
+    </html>

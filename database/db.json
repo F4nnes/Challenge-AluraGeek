@@ -1,0 +1,22 @@
+{
+  "productos": [
+    {
+      "id": 1,
+      "name": "nami",
+      "price": "50",
+      "image": "https://tiermaker.com/images/template_images/2022/1018049/league-of-legends-champion-illustration-icons-1018049/nami.png"
+    },
+    {
+      "id": 2,
+      "name": "aphelios",
+      "price": "60",
+      "image": "https://tiermaker.com/images/template_images/2022/1018049/league-of-legends-champion-illustration-icons-1018049/aphelios.png"
+    },
+    {
+      "id": 3,
+      "name": "karma",
+      "price": "70",
+      "image": "https://tiermaker.com/images/template_images/2022/1018049/league-of-legends-champion-illustration-icons-1018049/karma.png"
+    }
+  ]
+}

@@ -1,0 +1,278 @@
+:root {
+    --color-a: #03318c;
+    --color-b: #5D04D9;
+    --color-c: #9303a6;
+    --color-d: #C004D9;
+    --color-e: #8C0375;
+
+    --color-tipo: #e5e5e5;
+    --color-tipo-b: #000000;
+
+    --color-fondo-boton: #ffffff;
+}
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.encabezado {
+    background-color: var(--color-b);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0px 20px 0px;
+}
+
+.encabezado_titulo {
+    display: flex;
+    font-family: "Press Start 2P";
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-tipo);
+}
+
+/*seccion de contenedores*/
+.contenedor {
+    display: flex;
+    padding: 60px 40px 60px 40px;
+    gap: 70px;
+    justify-content: space-evenly;
+}
+
+/*tarjeta de producto*/
+.tarjetas_contendor{
+    display: flex; 
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 3px solid #000000;
+    background-color: var(--color-b);
+    width: 196px;
+    height: 258px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+img.size{
+    width: 185px;
+    height: 175px;
+    border: 5px solid black;
+    border-radius: 5px;
+
+}
+
+.card-container--info {
+    display: flex;
+    flex-direction: column;
+    color: var(--color-tipo);
+    font-family: "IBM Plex Mono";
+    font-size: 15px;
+    margin-top: 10px;
+}
+
+.card-container--value {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16;
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.delete-button{
+    border-radius: 5px;
+    background-color: var(--color-b);
+}
+
+/*Area de mostrador de busqueda*/
+.contenedor_productos {
+    display: flex;
+    flex-direction: column;
+    width: 758px;
+    height: auto;
+}
+
+.productos__titulo {
+    display: flex;
+    font-family: "Press Start 2P";
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--color-tipo-b);
+    padding-bottom: 40px;
+    justify-content: center;
+    
+}
+
+/*Seccion de busqueda de productos*/
+.contenedor_lista {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 410px;
+    height: auto;
+    padding: 0px 40px 40px 40px;
+}
+
+h1.lista_titulo {
+    display: flex;
+    font-family: "Press Start 2P";
+    font-size: 24px;
+    text-align: center;
+}
+
+.grupo__lista_formulario {
+    display: flex;
+    margin-top: 40px;
+}
+
+.grupo_input {
+    display: flex;
+    flex-direction: column;
+    border-color: var(--color-b);
+    border-radius: 30px;
+    width: 392px;
+    height: 58px;
+    font-family: "IBM Plex Mono";
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--color-b);
+    padding-left: 10px;
+    outline: none;
+}
+
+/*Botones*/
+.botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.boton_enviar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-a);
+    border: 2px solid var(--color-a);
+    color: var(--color-tipo);
+    font-family: "IBM Plex Mono";
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 15px;
+    width: 170px;
+    height: 55px;
+}
+
+.boton_limpiar {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-fondo-boton);
+    border: 2px solid var(--color-a);
+    color: #03318c;
+    font-family: "IBM Plex Mono";
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 15px;
+    width: 170px;
+    height: 55px;
+}
+
+/*footer*/
+.footer {
+    background-color: var(--color-b);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--color-tipo);
+    padding: 32px;
+}
+
+.pie_de_pagina {
+    display: flex;
+    align-items: center;
+    font-family: "Press Start 2P";
+    font-size: 24px;
+}
+
+.segundo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "IBM Plex Mono";
+    font-size: 16px;
+    gap: 10px;
+}
+
+.descripcionB {
+    font-weight: 100;
+}
+
+/*Seccion responsiva para celular*/
+@media (min-width: 375px) and (max-width:425px) {
+
+    .encabezado {
+        display: flex;
+    }
+
+    .encabezado_titulo {
+        font-size: 24px;
+        font-weight: 400;
+    }
+
+    .contenedor {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contenedor_productos {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+
+    h1.productos__titulo{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .tarjetas_contendor {
+        display: flex;
+        align-items: center;
+        flex-flow: column;
+        gap: 10px;
+    }
+
+    .contenedor_lista {
+        display: flex;
+        width: auto;
+    }
+
+    .botones {
+        display: flex;
+        gap: 10px;
+    }
+
+
+}
+
+@media (min-width: 426px) and (max-width:768px){
+    .contenedor_lista {
+        display: flex;
+        align-items: center;
+        width: auto;
+    }
+
+    .botones {
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+    }
+
+}
